@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+<body ng-app="">
+
+    <div ng-init="num1=0; num2=0; showResult=false">
+        <h3>Addition of Two Numbers</h3>
+        <input type="number" ng-model="num1" placeholder="Enter first number">
+        <input type="number" ng-model="num2" placeholder="Enter second number">
+        <button ng-click="showResult=true" ng-disabled="num1==0 && num2==0">Add</button>
+        
+        <p ng-show="showResult">Result: <span ng-bind="num1 + num2"></span></p>
+    </div>
+
+</body>
+</html>

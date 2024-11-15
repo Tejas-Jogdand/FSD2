@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+</head>
+<body ng-controller="MainController">
+    <p>Enter 1st number :</p>
+    <input type="number" ng-model="num1">
+    <p>Enter 2nd number :</p>
+    <input type="number" ng-model="num2">
+    <p>Addition of two numbers: <span ng-bind= "num1 + num2"></span> </p>
+
+    <!-- <script>
+        // Initialize the AngularJS app and controller
+        angular.module('myApp', [])
+            .controller('MainController', function($scope) {
+                // Scope variables for two numbers
+                $scope.num1 = 0;
+                $scope.num2 = 0;
+            });
+    </script> -->
+
+</body>
+</html>

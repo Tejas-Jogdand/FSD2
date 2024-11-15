@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+<body ng-app="">
+
+    <div ng-init="banks = [
+        {name: 'Bank A', MICR: '123456', IFSC: 'IFSC001', address: 'Address A'},
+        {name: 'Bank B', MICR: '789012', IFSC: 'IFSC002', address: 'Address B'},
+        {name: 'Bank C', MICR: '789012', IFSC: 'IFSC002', address: 'Address C'}
+    ]">
+        <table border="1">
+            <tr>
+                <th>Bank Name</th>
+                <th>MICR</th>
+                <th>IFSC</th>
+                <th>Address</th>
+            </tr>
+            <tr ng-repeat="bank in banks">
+                <td>{{bank.name}}</td>
+                <td>{{bank.MICR}}</td>
+                <td>{{bank.IFSC}}</td>
+                <td>{{bank.address}}</td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>

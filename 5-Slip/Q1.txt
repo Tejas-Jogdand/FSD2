@@ -1,0 +1,23 @@
+
+//app.component.html
+
+<div>
+    <h3>Input and Display</h3>
+    <input [(ngModel)]="userInput" placeholder="Enter something" />
+    <p>You entered: {{ userInput }}</p>
+</div>
+
+//app.component.ts
+
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+})
+export class AppComponent {
+  userInput: string = '';
+}
+
+//imort form into app.module.ts
+//import { FormsModule } from '@angular/forms';
