@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+<body ng-app="">
+
+    <div ng-init="employees = [
+        {name: 'John Doe', id: 'E001', pin: '123456', address: '123 Main St'},
+        {name: 'Jane Smith', id: 'E002', pin: '654321', address: '456 High St'}
+    ]">
+        <h3>Employee Details</h3>
+        <table border="1">
+            <tr>
+                <th>Employee Name</th>
+                <th>Employee ID</th>
+                <th>Pin Code</th>
+                <th>Address</th>
+            </tr>
+            <tr ng-repeat="emp in employees">
+                <td>{{emp.name}}</td>
+                <td>{{emp.id}}</td>
+                <td>{{emp.pin}}</td>
+                <td>{{emp.address}}</td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>
